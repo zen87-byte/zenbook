@@ -1,0 +1,139 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body,
+input,
+button {
+  font-family: "Open Sans", sans-serif;
+}
+
+header {
+  width: 100%;
+  background-color: #0a1e41;
+  padding: 8px;
+}
+
+header > h1 {
+  width: fit-content;
+  margin: auto;
+  color: #f7f6f6;
+}
+
+main {
+  max-width: 800px;
+  width: 80%;
+  margin: 16px auto;
+  /* color: #224075 */
+  color: #355fa8;
+}
+
+section {
+  width: 100%;
+  margin: 16px 0;
+  padding: 12px;
+  border-radius: 8px;
+  border: 1px solid #0a1e41;
+}
+
+.input_book > h1 {
+  width: fit-content;
+  margin: 0 auto;
+}
+
+.input_book > form > .input > label {
+  display: block;
+  width: 100%;
+}
+
+input[type="text"] {
+  width: 100%;
+  padding: 4px 12px;
+  border: 1px solid #0a1e41;
+  border-radius: 8px;
+}
+
+input[type="text"]:focus {
+  outline: none;
+}
+
+.input_book > form > .submitButton {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.input_book > form > .submitButton > .mark {
+  margin: 8px 0;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.input > .submitButton > div {
+  display: flex;
+}
+
+button {
+  width: 80px;
+  margin: 12px 0;
+  padding: 4px 12px;
+  border-radius: 8px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+
+.input_book > form > .submitButton > div > #cancelButton {
+  color: #220475;
+  background-color: white;
+  border: 1px solid #220475;
+}
+
+.input_book > form > .submitButton > div > #confirmButton {
+  color: #f7f6f6;
+  background-color: #220475;
+}
+
+.search_book > form {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 8px;
+}
+
+.search_book > form > #searchButton {
+  color: #f7f6f6;
+  background-color: #220475;
+}
+
+.item {
+  color: black;
+  margin: 16px 0;
+  padding: 8px;
+  border: 1px solid #220475;
+  border-radius: 8px;
+}
+
+.buttonContainer{
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.buttonContainer > .moveButton{
+  width: fit-content;
+  background-color: #220475;
+  color: #f7f6f6;
+}
+
+.buttonContainer > .removeButton{
+  background-color: red;
+  color: #f7f6f6;
+}
+
+.hide{
+  display: none;
+}

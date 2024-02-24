@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>ZenBook</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header>
+      <h1>ZenBook</h1>
+    </header>
+    <main>
+      <section class="input_book">
+        <h1>Your Book</h1>
+        <form id="inputBook">
+          <div class="input">
+            <label for="inputTitle">Title: </label>
+            <input id="inputTitle" type="text" />
+          </div>
+          <div class="input">
+            <label for="inputAuthor">Author: </label>
+            <input id="inputAuthor" type="text" />
+          </div>
+          <div class="input">
+            <label for="inputYear">Year: </label>
+            <input id="inputYear" type="text" />
+          </div>
+          <div class="submitButton">
+            <div class="mark">
+              <label for="markAsRead">Finished reading</label>
+              <input id="markAsRead" type="checkbox" />
+            </div>
+            <div>
+              <button id="cancelButton">Cancel</button>
+              <button type="submit" form="inputBook" id="confirmButton">
+                Add
+              </button>
+            </div>
+          </div>
+        </form>
+      </section>
+
+      <section class="search_book">
+        <form id="searchBook">
+          <label for="searchBookTitle">Title</label>
+          <input id="searchBookTitle" type="text" />
+          <button id="searchButton" type="submit">Search</button>
+        </form>
+      </section>
+
+      <section class="unfinished-read">
+        <h3>Unfinished Read</h3>
+        <div class="listItem" id="unfinishedRead"></div>
+      </section>
+
+      <section class="finished-read">
+        <h3>Finished Read</h3>
+        <div class="listItem" id="finishedRead"></div>
+      </section>
+    </main>
+    
+    <script src="script.js" type="text/javascript"></script>
+  </body>
+</html>
